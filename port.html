@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marcos Paulo | Dev Back-End & Eletrônica</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2300ff66'><path d='M13 2L3 14h9l-1 8 10-12h-9l1-8z'/></svg>">
+  <link rel="stylesheet" href="portcss.css">
+</head>
+<body>
+
+  <!-- Barra Superior estilo Cabeçalho de Placa -->
+  <header class="topo-pcb">
+    <div class="status-led">
+      <span id="led-energia" class="led verde-aceso"></span>
+      <span id="texto-energia">SISTEMA ONLINE (5V)</span>
+    </div>
+    
+    <nav class="menu">
+      <a href="#sobre">Sobre</a>
+      <a href="#conquistas">Formação & Medalhas</a>
+      <a href="#projeto-tinkercad">Circuito C++</a>
+    </nav>
+
+    <button id="btn-energia" class="botao-placa">Desligar Placa</button>
+  </header>
+
+  <!-- Seção Principal -->
+  <main class="container">
+    
+    <section id="sobre" class="cartao-chip">
+      <div class="pino-decoracao esquerda"></div>
+      <div class="pino-decoracao direita"></div>
+      
+      <p class="etiqueta-componente">MICROCONTROLADOR // DEV-17</p>
+      <h1>Marcos Paulo da Silva Sousa</h1>
+      <h2>Estudante de Desenvolvimento de Sistemas | Foco em Back-End & Eletrônica</h2>
+      <p class="descricao">
+        Tenho 17 anos e sou apaixonado por lógica, arquitetura de sistemas (back-end) e hardware. 
+        Curioso por natureza e sempre disposto a aprender novas tecnologias para resolver problemas reais.
+      </p>
+    </section>
+
+    <!-- Trilha de Conexão Visual -->
+    <div class="trilha-vertical"></div>
+
+    <!-- Seção de Formação e Conquistas -->
+    <section id="conquistas" class="grade-cards">
+      
+      <article class="card-modulo">
+        <span class="badge">FORMAÇÃO</span>
+        <h3>ETEC & SENAI</h3>
+        <p>Cursando Técnico em Desenvolvimento de Sistemas e Ensino Médio Técnico integrado.</p>
+      </article>
+
+      <article class="card-modulo">
+        <span class="badge">CERTIFICAÇÃO</span>
+        <h3>Suporte Técnico em TI</h3>
+        <p>Diploma de Aprendizagem Industrial como Operador de Suporte Técnico em Tecnologia da Informação.</p>
+      </article>
+
+      <article class="card-modulo">
+        <span class="badge">OLIMPÍADAS</span>
+        <h3>Medalhista de Prata</h3>
+        <p>Conquista de medalha de prata na <strong>OBMEP</strong> (Matemática) e na <strong>OLITEF</strong> (Educação Financeira).</p>
+      </article>
+
+    </section>
+
+    <div class="trilha-vertical"></div>
+
+    <!-- Seção de Integração com o Tinkercad -->
+    <section id="projeto-tinkercad" class="cartao-chip destaque-tinkercad">
+      <p class="etiqueta-componente">SIMULAÇÃO EXTERNA // ARDUINO + C++</p>
+      <h2>Meu Cartão de Visitas no Tinkercad</h2>
+      <p>
+        Quer ver meu código C++ rodando na prática? Montei um circuito com Arduino Uno, 
+        Display LCD 16x2, botões de navegação e alertas sonoros que exibe meu currículo diretamente no hardware.
+      </p>
+      
+      <!-- SUBSTITUA O '#' ABAIXO PELO LINK DO SEU PROJETO NO TINKERCAD -->
+      <a href="https://www.tinkercad.com/things/lQzUXGeODUx/editel?returnTo=%2Fdashboard" target="_blank" rel="noopener noreferrer" class="botao-tinkercad">
+        ⚡ Abrir Simulação no Tinkercad
+      </a>
+    </section>
+
+  </main>
+
+  <footer class="rodape">
+    <p>Desenvolvido por Marcos Paulo • Lógica, C++ & Web</p>
+  </footer>
+
+  <script src="portjs.js"></script>
+</body>
+</html>
